@@ -5,7 +5,7 @@ export default function Home() {
   const { requestNft, isLoading, error, isSuccess } = useMintNft();
 
   return (
-    <div className="py-[8rem] gap-4 text-white font-bold text-4xl text-center flex place-items-center flex-col ">
+    <div className="py-[8rem] gap-4 text-white font-bold text-4xl text-center flex place-items-center flex-col justify-evenly ">
       <div className="background -z-100">
         <div>
           <div className="bubbles">
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="rounded-full">
+      <div className="rounded-full flex place-items-center">
         <Image
           className="hover:scale-125 rounded-full"
           src="/Rabbit Hole.png"
