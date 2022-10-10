@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {data && data.length <= 1 ? (
+      {!data ? (
         <div>
           <div className="rounded-full flex place-items-center">
             <Image
