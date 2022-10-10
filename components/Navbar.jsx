@@ -31,16 +31,6 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="hidden md:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-black">
-                Home
-              </li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-black">
-                About
-              </li>
-            </Link>
             <ConnectWallet />
             {/* <button onClick={connectWallet} className="">
               Connect your wallet
@@ -86,28 +76,8 @@ const Navbar = () => {
               </div>
             </div>
             <div className="text-[10px] font-bold border-b my-6">
-              <p>PlaceHolder</p>
+              <p>You're late...</p>
             </div>
-          </div>
-          <div className="py-4 flex flex-col">
-            <ul className="uppercase">
-              <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
-                </li>
-              </Link>
-              <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  About
-                </li>
-              </Link>
-              <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
-                </li>
-              </Link>
-            </ul>
-            <div className="pt-40"></div>
           </div>
         </div>
       </div>

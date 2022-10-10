@@ -5,9 +5,9 @@ export const CONTRACT_ABI = [
   {
     inputs: [
       {
-        internalType: "string[10]",
+        internalType: "string",
         name: "themeTokenUris",
-        type: "string[10]",
+        type: "string",
       },
       {
         internalType: "uint256",
@@ -25,7 +25,12 @@ export const CONTRACT_ABI = [
   },
   {
     inputs: [],
-    name: "RandomIpfsNft__RangeOutOfBounds",
+    name: "Underland__NoTokensLeft",
+    type: "error",
+  },
+  {
+    inputs: [],
+    name: "Underland__WithdrawFailed",
     type: "error",
   },
   {
@@ -225,39 +230,15 @@ export const CONTRACT_ABI = [
   },
   {
     inputs: [],
-    name: "getThemeChance",
+    name: "getTokenArray",
     outputs: [
       {
-        internalType: "uint256[10]",
+        internalType: "uint8[]",
         name: "",
-        type: "uint256[10]",
+        type: "uint8[]",
       },
     ],
-    stateMutability: "pure",
-    type: "function",
-  },
-  {
-    inputs: [
-      {
-        internalType: "uint256",
-        name: "moddedRng",
-        type: "uint256",
-      },
-      {
-        internalType: "string[10]",
-        name: "themeUris",
-        type: "string[10]",
-      },
-    ],
-    name: "getThemeFromRng",
-    outputs: [
-      {
-        internalType: "string",
-        name: "themeIndex",
-        type: "string",
-      },
-    ],
-    stateMutability: "pure",
+    stateMutability: "view",
     type: "function",
   },
   {
@@ -542,6 +523,13 @@ export const CONTRACT_ABI = [
     name: "transferOwnership",
     outputs: [],
     stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "withdraw",
+    outputs: [],
+    stateMutability: "payable",
     type: "function",
   },
 ];

@@ -1,14 +1,50 @@
 import Image from "next/image";
 import { useMintNft } from "../hooks/useMintNft";
+import Background from "../components/Background";
 
 export default function Home() {
   const { requestNft, isLoading, error, isSuccess } = useMintNft();
 
   return (
-    <div className="py-[8rem] gap-4 bg-gradient-to-tr from-gray-600 via-gray-300 to-gray-600 h-screen w-screen text-white font-bold text-4xl text-center flex place-items-center flex-col ">
+    <div className="py-[8rem] gap-4 text-white font-bold text-4xl text-center flex place-items-center flex-col ">
+      <div className="background -z-100">
+        <div>
+          <div className="bubbles">
+            <span style={{ "--i": 11 }}></span>
+            <span style={{ "--i": 12 }}></span>
+            <span style={{ "--i": 24 }}></span>
+            <span style={{ "--i": 10 }}></span>
+            <span style={{ "--i": 14 }}></span>
+            <span style={{ "--i": 23 }}></span>
+            <span style={{ "--i": 18 }}></span>
+            <span style={{ "--i": 16 }}></span>
+            <span style={{ "--i": 19 }}></span>
+            <span style={{ "--i": 20 }}></span>
+            <span style={{ "--i": 22 }}></span>
+            <span style={{ "--i": 25 }}></span>
+            <span style={{ "--i": 18 }}></span>
+            <span style={{ "--i": 21 }}></span>
+            <span style={{ "--i": 15 }}></span>
+            <span style={{ "--i": 13 }}></span>
+            <span style={{ "--i": 26 }}></span>
+            <span style={{ "--i": 17 }}></span>
+            <span style={{ "--i": 13 }}></span>
+            <span style={{ "--i": 28 }}></span>
+            <span style={{ "--i": 16 }}></span>
+            <span style={{ "--i": 10 }}></span>
+            <span style={{ "--i": 19 }}></span>
+            <span style={{ "--i": 25 }}></span>
+            <span style={{ "--i": 13 }}></span>
+            <span style={{ "--i": 17 }}></span>
+            <span style={{ "--i": 22 }}></span>
+            <span style={{ "--i": 12 }}></span>
+            <span style={{ "--i": 11 }}></span>
+          </div>
+        </div>
+      </div>
       <div className="rounded-full">
         <Image
-          className="hover:cursor-pointer hover:scale-125 rounded-full"
+          className="hover:scale-125 rounded-full"
           src="/Rabbit Hole.png"
           width="750"
           height="750"
@@ -16,14 +52,14 @@ export default function Home() {
       </div>
       <div className="p-3 flex flex-col">
         <button
-          className="bg-gray-500 rounded-lg p-3 text-gray-300 hover:scale-105 shadow-lg shadow-gray-500"
+          className="bg-gray-500 rounded-lg p-3 text-gray-300 hover:scale-105 shadow-sm shadow-gray-500"
           onClick={requestNft}
           disabled={!requestNft}
         >
           Follow the white rabbit...
         </button>
 
-        <p className="text-sm font-bold text-black py-2">
+        <p className="text-lg font-bold text-white py-2">
           Mint your Underland NFT now 0.01E.
         </p>
       </div>

@@ -1,14 +1,14 @@
 // import '@rainbow-me/rainbowkit/styles.css';
 
-import { getDefaultWallets } from '@rainbow-me/rainbowkit';
-import { chain, configureChains, createClient } from 'wagmi';
+import { getDefaultWallets } from "@rainbow-me/rainbowkit";
+import { chain, configureChains, createClient } from "wagmi";
 // import { alchemyProvider } from 'wagmi/providers/alchemy';
-import { publicProvider } from 'wagmi/providers/public';
+import { publicProvider } from "wagmi/providers/public";
 
 const availableChains =
-  process.env.NODE_ENV === 'production'
+  process.env.NODE_ENV === "production"
     ? [chain.polygonMumbai]
-    : [chain.polygon, chain.polygonMumbai, chain.localhost];
+    : [chain.polygon, chain.polygonMumbai, chain.localhost, chain.goerli];
 
 const { chains, provider } = configureChains(availableChains, [
   // alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }),
@@ -16,7 +16,7 @@ const { chains, provider } = configureChains(availableChains, [
 ]);
 
 const { connectors } = getDefaultWallets({
-  appName: 'The Lily Pad',
+  appName: "Underland",
   chains,
 });
 
