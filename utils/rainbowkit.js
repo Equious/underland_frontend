@@ -7,8 +7,14 @@ import { publicProvider } from "wagmi/providers/public";
 
 const availableChains =
   process.env.NODE_ENV === "production"
-    ? [chain.goerli]
-    : [chain.polygon, chain.polygonMumbai, chain.localhost, chain.goerli];
+    ? [chain.mainnet]
+    : [
+        chain.polygon,
+        chain.polygonMumbai,
+        chain.localhost,
+        chain.goerli,
+        chain.mainnet,
+      ];
 
 const { chains, provider } = configureChains(availableChains, [
   // alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }),
