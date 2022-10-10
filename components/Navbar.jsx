@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-20 shadow-lg shadow-gray-500 z-[100]">
-      <div className=" bg-gradient-to-r from-pink-600 via-green-300 to-purple-600 flex justify-evenly items-center w-full h-full px-2 2xl:px-16">
+      <div className=" bg-gradient-to-r from-pink-600 via-green-300 to-purple-600 flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <a>
             <Image
