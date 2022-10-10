@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link href="/">
           <a>
             <Image
-              alt=""
+              alt="/"
               className="hover:cursor-pointer hover:scale-105"
               src="/eq-favicon.ico"
               width="75"
@@ -76,7 +76,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="text-[10px] font-bold border-b my-6">
-              <p>You're late...</p>
+              <p>You are late...</p>
             </div>
           </div>
         </div>
