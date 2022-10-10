@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useMintNft } from "../hooks/useMintNft";
-import Background from "../components/Background";
 
 export default function Home() {
   const { requestNft, isLoading, error, isSuccess } = useMintNft();
@@ -48,6 +47,7 @@ export default function Home() {
           src="/Rabbit Hole.png"
           width="750"
           height="750"
+          alt="/"
         />
       </div>
       <div className="p-3 flex flex-col">
