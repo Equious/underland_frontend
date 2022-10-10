@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 
-export const CONTRACT_ADDRESS = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+export const CONTRACT_ADDRESS = "0x0Aa7C3168587E713c7A3aF60645673ACbDc1bBeC";
 export const CONTRACT_ABI = [
   {
     inputs: [
@@ -545,4 +545,4 @@ export const CONTRACT_ABI = [
     type: "function",
   },
 ];
-export const MINT_FEE = ethers.utils.parseEther("0.1");
+export const MINT_FEE = ethers.utils.parseEther("0.01");

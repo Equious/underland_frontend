@@ -1,6 +1,4 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { useEffect, useState } from "react";
 import { useMintNft } from "../hooks/useMintNft";
 
 export default function Home() {
@@ -24,8 +22,9 @@ export default function Home() {
         >
           Follow the white rabbit...
         </button>
+
         <p className="text-sm font-bold text-black py-2">
-          Mint your Underland NFT now 0.02E.
+          Mint your Underland NFT now 0.01E.
         </p>
       </div>
     </div>
